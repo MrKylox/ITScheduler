@@ -11,14 +11,9 @@ app.use(express.static('public'));
 
 const path = require('path');
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Set Content Security Policy header
-app.use((req, res, next) => {
-  res.setHeader('Content-Security-Policy', "default-src 'self'"); // Adjust as needed
-  next();
-});
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+  });
 
 io.on('connection', (socket) => {
     console.log('A user connected');
