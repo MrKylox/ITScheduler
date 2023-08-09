@@ -1,0 +1,47 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New IT Scheduler</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main>
+  <div class="shift-form">
+      <h2>Add a Shift</h2>
+      <!-- Form for adding a shift -->
+      <form id="add-shift-form">
+        <label for="shift-date">Date:</label>
+        <input type="date" id="shift-date" name="shiftDate" required>
+        <br>
+    
+        <label for="shift-time">Time:</label>
+        <input type="time" id="shift-time" name="shiftTime" required>
+        <br>
+    
+        <label for="shift-worker">Worker:</label>
+        <input type="text" id="shift-worker" name="shiftWorker" required>
+        <br>
+        <button type="submit">Add Shift</button>
+    </form>
+  </div>
+  <div class="shift-list">
+      <h2>Shift List</h2>
+      <!-- List of scheduled shifts -->
+      <div id="shift-list-container">
+        <!-- Shift items will be dynamically added here -->
+    </div>
+  </div>
+</main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "scoket.io",
+  "version": "0.0.1",
+  "description": "IT Scheduling app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrKylox/ITScheduler.git"
+  },
+  "author": "Kevin Barboza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrKylox/ITScheduler/issues"
+  },
+  "homepage": "https://github.com/MrKylox/ITScheduler#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.1"
+  }
+}
